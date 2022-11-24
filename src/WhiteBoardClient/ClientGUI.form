@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="WhiteBoardClient.ClientGUI">
+  <grid id="27dc6" binding="contentPane" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1448" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="10e6c" binding="WhiteBoard" custom-create="true" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="1000" height="800"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="1c8a9" class="javax.swing.JTextField" binding="textField" custom-create="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="1000" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <editable value="false"/>
+              <enabled value="false"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <toolbar id="33d38">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <floatable value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="6b754" class="javax.swing.JRadioButton" binding="lineRadioButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <selected value="true"/>
+              <text value="Line"/>
+            </properties>
+          </component>
+          <component id="fdb5a" class="javax.swing.JRadioButton" binding="circleRadioButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Circle"/>
+            </properties>
+          </component>
+          <component id="e5242" class="javax.swing.JRadioButton" binding="ovalRadioButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <hideActionText value="false"/>
+              <text value="Oval"/>
+            </properties>
+          </component>
+          <component id="8a9bd" class="javax.swing.JRadioButton" binding="rectangleRadioButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Rectangle"/>
+            </properties>
+          </component>
+          <component id="ab259" class="javax.swing.JRadioButton" binding="textRadioButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Text"/>
+            </properties>
+          </component>
+          <component id="c5008" class="javax.swing.JToolBar$Separator">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="2aa3e" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Colour  "/>
+            </properties>
+          </component>
+          <component id="53457" class="javax.swing.JButton" binding="colourButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <background color="-16777216"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </toolbar>
+      <grid id="3c147" binding="chatPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="250" height="-1"/>
+            <preferred-size width="250" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="fed69" class="javax.swing.JTextField" binding="messageBox">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="2" fill="1" indent="0" use-parent-layout="false">
+                <minimum-size width="150" height="25"/>
+                <preferred-size width="150" height="25"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-13355980"/>
+              <foreground color="-2894893"/>
+            </properties>
+          </component>
+          <scrollpane id="47bf4">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalScrollBarPolicy value="31"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="3f833" class="javax.swing.JTextPane" binding="chatBox">
+                <constraints/>
+                <properties>
+                  <background color="-13355980"/>
+                  <editable value="false"/>
+                  <foreground color="-2894893"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <component id="2fc1f" class="javax.swing.JTextPane" binding="peerListPane">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="shape">
+      <member id="8a9bd"/>
+      <member id="e5242"/>
+      <member id="fdb5a"/>
+      <member id="6b754"/>
+      <member id="ab259"/>
+    </group>
+  </buttonGroups>
+</form>
